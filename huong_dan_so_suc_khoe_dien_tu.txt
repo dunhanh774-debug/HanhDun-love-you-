@@ -1,0 +1,44 @@
+Hướng dẫn cài đặt và sử dụng "Sổ Sức Khỏe Điện Tử"
+
+A. Giải pháp ưu tiên: dùng điện thoại (Android / iOS)
+1. Chuẩn bị: số điện thoại của phụ huynh, số BHYT (nếu có), họ tên, ngày sinh, số CCCD/CMND, mã học sinh/mã lớp nếu trường yêu cầu.
+2. Android:
+   - Mở Google Play Store -> tìm "Sổ Sức Khỏe Điện Tử" (hoặc "Sổ sức khỏe điện tử", "SKĐT")
+   - Chọn ứng dụng chính chủ (Developer: Bộ Y tế hoặc tên nhà cung cấp được trường hướng dẫn) -> Nhấn "Cài đặt"
+   - Mở app, chọn "Đăng ký" hoặc "Đăng nhập". Nhập số điện thoại, xác thực OTP.
+   - Thêm thông tin học sinh (nếu app yêu cầu) và liên kết thẻ BHYT/CCCD theo hướng dẫn trong app.
+3. iOS:
+   - Mở App Store -> tìm "Sổ Sức Khỏe Điện Tử" -> Tải về -> làm theo các bước giống Android.
+4. Nếu trường đã gửi QR code hoặc link trong file Excel: mở app -> chọn "Quét QR" hoặc "Thêm học sinh bằng mã" -> quét link/QR.
+
+B. Trên máy tính (nếu cần cài chạy trên Windows)
+Cách 1 — Truy cập Web (nếu trường/cơ quan có cổng web):
+   - Mở trình duyệt, nhập link do nhà trường cung cấp (nếu có) -> đăng nhập bằng tài khoản/OTP theo hướng dẫn.
+Cách 2 — Dùng giả lập Android (BlueStacks / Nox) để cài app từ Play Store:
+   1. Tải và cài BlueStacks từ https://www.bluestacks.com/ hoặc Nox từ trang chính thức.
+   2. Mở giả lập, đăng nhập Google bằng tài khoản của bạn (bắt buộc để vào Play Store).
+   3. Mở Play Store trong giả lập -> tìm "Sổ Sức Khỏe Điện Tử" -> cài đặt -> mở và đăng nhập như trên điện thoại.
+   4. Lưu ý: giả lập cần có Google Play Services; với máy tính yếu, hiệu năng có thể kém.
+Cách 3 — Cài file APK (KHÔNG KHUYẾN KHÍCH nếu không rõ nguồn):
+   - Chỉ tải APK từ nguồn tin cậy (ví dụ trang chính thức của nhà phát triển). Tránh trang không rõ ràng.
+   - Trong giả lập, chọn cài đặt file APK và mở.
+
+C. Thông tin cần chuẩn bị để đăng ký/khôi phục tài khoản
+- Số điện thoại nhận OTP
+- Số BHYT hoặc mã học sinh (nếu trường yêu cầu)
+- CCCD/CMND, họ tên, ngày sinh
+- Email (nếu app yêu cầu)
+
+D. Xử lý lỗi thường gặp
+- Không nhận OTP: kiểm tra sóng, dùng lại yêu cầu OTP, kiểm tra tin nhắn rác.
+- Không tìm thấy ứng dụng trên Play/App Store: kiểm tra chính xác tên app, hỏi nhà trường để biết link chính thức.
+- Giả lập không có Play Store: cài BlueStacks chính thức hoặc cấu hình gói Google Play Services.
+
+E. Gợi ý an toàn
+- Luôn cài ứng dụng từ Google Play/App Store hoặc trang nhà phát triển chính thức.
+- Không chia sẻ mật khẩu; chia sẻ thông tin cần thiết cho nhà trường theo yêu cầu.
+
+Nếu bạn muốn, mình có thể:
+- Giúp bạn mô tả chi tiết hơn theo nội dung file Excel (ví dụ có QR/link cụ thể) — gửi ảnh/chi tiết QR nếu có.
+- Hướng dẫn cài BlueStacks và cài app từng bước qua TeamViewer/AnyDesk nếu bạn cho phép truy cập từ xa.
+

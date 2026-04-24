@@ -1,0 +1,381 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║               HƯỚNG DẪN SỬ DỤNG BOT DISCORD — EIU BOT                        ║
+║          Được phát triển bởi HanhDun | Prefix: eiu / Eiu / E / e             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TỔNG QUAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EIU Bot là một Discord bot đa năng dành cho server học sinh/sinh viên, tích hợp
+các tính năng giải trí, kinh tế ảo, học tập và quản lý server. Bot được viết
+bằng Python với thư viện discord.py.
+
+Prefix hợp lệ: eiu | Eiu | E | e
+Ví dụ: "eiuhelp", "Eiuhelp", "Ehelp", "ehelp" — đều hoạt động như nhau.
+
+Để xem danh sách lệnh nhanh: gõ  eiuhelp
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  MỤC LỤC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Chào mừng thành viên (tự động)
+  2. Hệ thống Kinh tế & Khoáng sản (Minecraft Style)
+  3. Hệ thống Chứng khoán
+  4. Sự kiện Hội Trợ Hè
+  5. Tính năng Giải trí & Xã hội
+  6. Hệ thống Tình yêu
+  7. Tính năng Thông tin & Học tập
+  8. Nhạc (Voice Channel)
+  9. Quản lý Server (Admin)
+  10. Tra cứu Mạng xã hội
+  11. Lệnh phụ khác
+  12. Lưu ý & Cooldown
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. CHÀO MỪNG THÀNH VIÊN (TỰ ĐỘNG)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Khi có thành viên mới tham gia server, bot tự động:
+  • Gửi tin chào mừng kèm embed đẹp có thơ vào kênh "•🎀𝘞𝘦𝘭𝘤𝘰𝘮𝘦"
+  • Tag role thành viên mới và mention họ
+  • Gắn role mặc định cho thành viên mới (role ID cấu hình sẵn)
+
+Khi có thành viên rời server, bot tự động:
+  • Gửi thông báo chia buồn kèm avatar thành viên vào kênh "•👋𝘎𝘰𝘰𝘥𝘉𝘺𝘦"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  2. HỆ THỐNG KINH TẾ & KHOÁNG SẢN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hệ thống kinh tế lấy cảm hứng từ Minecraft, người chơi đào khoáng sản, nung
+thành thỏi, rồi bán để kiếm Hcoin.
+
+► LỆNH XEM TÀI KHOẢN
+  eiucash             — Xem số Hcoin hiện có
+  eiupack             — Xem túi đồ (khoáng sản đang giữ)
+  eiupack @member     — Xem túi đồ của thành viên khác
+
+► NHẬN COIN HÀNG NGÀY
+  eiudaily            — Nhận 1-10 Hcoin ngẫu nhiên mỗi ngày (cooldown 24 giờ)
+
+► ĐÀO KHOÁNG SẢN
+  eiumine             — Đào ngẫu nhiên 1 khoáng sản
+
+  Danh sách khoáng sản và tỷ lệ xuất hiện:
+  ┌─────────────────────────────┬──────────────┐
+  │ Khoáng sản                  │ Tỷ lệ        │
+  ├─────────────────────────────┼──────────────┤
+  │ Đá Cuội         [#1]        │ 55%          │
+  │ Than             [#2]       │ 15%          │
+  │ Quặng Sắt       [#3]        │ 12%          │
+  │ Quặng Đồng      [#4]        │  8%          │
+  │ Redstone         [#5]       │  2%          │
+  │ Quặng Vàng      [#6]        │  4%          │
+  │ Lapis Lazuli    [#7]        │  3%          │
+  │ Kim Cương       [#8]        │  0.8%        │
+  │ Ngọc Lục Bảo   [#9]         │  0.2%        │
+  └─────────────────────────────┴──────────────┘
+
+► NUNG KHOÁNG SẢN
+  eiunung <mã số> <số lượng>    — Nung khoáng sản thô thành thỏi
+
+  Kết quả nung:
+  • Quặng Sắt  [#3]  → Thỏi Sắt  [#11]
+  • Quặng Đồng [#4]  → Đồng      [#12]
+  • Quặng Vàng [#6]  → Thỏi Vàng [#13]
+  • Đá Cuội   [#1]  → Đá (đã nung) [#10]
+
+► BÁN KHOÁNG SẢN
+  eiusell                       — Xem bảng giá khoáng sản
+  eiusell <mã số> <số lượng>    — Bán khoáng sản
+
+  Bảng giá bán:
+  ┌─────────────────────────────┬──────────────┐
+  │ Khoáng sản                  │ Giá/cái      │
+  ├─────────────────────────────┼──────────────┤
+  │ Đá Cuội       [#1]          │ 10 Hcoin      │
+  │ Than           [#2]         │ 20 Hcoin      │
+  │ Quặng Sắt     [#3]          │ 20 Hcoin      │
+  │ Quặng Đồng    [#4]          │ 20 Hcoin      │
+  │ Redstone       [#5]         │ 20 Hcoin      │
+  │ Quặng Vàng    [#6]          │ 30 Hcoin      │
+  │ Lapis Lazuli  [#7]          │ 50 Hcoin      │
+  │ Kim Cương     [#8]          │ 200 Hcoin     │
+  │ Ngọc Lục Bảo  [#9]          │ 150 Hcoin     │
+  │ Đá (nung)     [#10]         │ 15 Hcoin      │
+  │ Thỏi Sắt      [#11]         │ 40 Hcoin      │
+  │ Đồng          [#12]         │ 35 Hcoin      │
+  │ Thỏi Vàng     [#13]         │ 10-50 Hcoin   │
+  └─────────────────────────────┴──────────────┘
+
+  Ví dụ: eiusell #8 5    →  Bán 5 kim cương, nhận 1000 Hcoin
+
+► TẶNG COIN
+  eiugive @member <số Hcoin>     — Tặng Hcoin cho thành viên khác
+  (Bot hiển thị nút xác nhận trước khi giao dịch)
+
+► TÚC XÚC XẮC
+  eiucf <số tiền>               — Tung đồng xu, thắng x2, thua mất hết
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  3. HỆ THỐNG CHỨNG KHOÁN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bot mô phỏng thị trường chứng khoán với cổ phiếu HDPE, giá tự động cập nhật
+theo thời gian thực và hiển thị biểu đồ candlestick.
+
+► THIẾT LẬP (Admin)
+  eiusetupchannel #tên-kênh     — Chọn kênh để bot tự động gửi biểu đồ
+                                   (cập nhật mỗi 3 phút)
+
+► GIAO DỊCH
+  eiubuy <số cổ phiếu>          — Mua cổ phiếu HDPE theo giá hiện tại
+  eiusellstock <số cổ phiếu>    — Bán cổ phiếu HDPE
+
+► XEM THÔNG TIN
+  eiucophieu                    — Xem số cổ phiếu bạn đang nắm giữ
+  eiutut                        — Xem hướng dẫn đầu tư chứng khoán chi tiết
+
+  MẸO ĐẦU TƯ:
+  • Mua khi giá giảm (📉), bán khi giá tăng (📈)
+  • Theo dõi biểu đồ candlestick bot gửi mỗi 3 phút
+  • Không nên all-in khi giá đang pump mạnh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  4. SỰ KIỆN HỘI TRỢ HÈ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sự kiện đặc biệt dành cho học sinh THPT Kẻ Sặt. Người chơi dùng Hcoin để mua
+đồ ăn, thức uống từ các gian hàng của từng lớp.
+
+► LỆNH
+  eiuevent                      — Xem danh sách các gian hàng sự kiện
+  eiuevent <tên lớp>            — Vào gian hàng của lớp cụ thể để mua đồ
+  eiupack                       — Xem đồ đã mua trong sự kiện
+
+  Danh sách gian hàng các lớp:
+  • 12A — Hương Vị Bình Yên (nước, snack)
+  • 12B — Tiệm Bánh Hồi Ký (bánh nướng, trà)
+  • 12C — Góc Chill 12C (đồ uống, dessert)
+  • 12D — Quán Cuối Đường 12D (phở, cà phê)
+  • 12E — Last Dance 12E (crepe, mocktail, tiramisu)
+  • 12G — Chương Cuối 12G (trà, sách, bookmark)
+  • 12H — Bữa Tiệc Cuối 12H (sushi, bánh sinh nhật)
+  • ... và nhiều lớp khác
+
+  Mỗi gian hàng có ~10 món, gồm đồ ăn, nước uống, combo và quà lưu niệm.
+  Giá từ 0 (miễn phí) đến 200 Hcoin.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  5. TÍNH NĂNG GIẢI TRÍ & XÃ HỘI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► XEM AVATAR
+  eiuav @member                 — Xem ảnh đại diện cỡ lớn của thành viên
+
+► TƯƠNG TÁC ANIME
+  eiukiss @member               — Gửi gif hôn thành viên được tag
+  eiuhug @member                — Gửi gif ôm thành viên được tag
+  eiuslap @member               — Gửi gif tát thành viên được tag
+
+► THÔNG TIN SERVER
+  eiuserverinfo                 — Xem thông tin chi tiết server (tên, số thành
+                                   viên, ngày tạo, icon...)
+
+► VUI VẺ
+  eiugay                        — Kiểm tra "mức độ gay" ngẫu nhiên (vui)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  6. HỆ THỐNG TÌNH YÊU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bot cho phép người dùng "kết hôn" với thành viên khác và theo dõi chỉ số
+tình cảm mỗi ngày.
+
+► CÁC LỆNH
+  eiusetlove @member            — Gửi lời cầu hôn cho thành viên
+                                   (họ có 60 giây để chấp nhận/từ chối)
+
+  eiudailylove @member          — Tăng thêm 1-5% độ thân mật với người yêu
+                                   (cooldown 1 tiếng)
+
+  eiuchecklove                  — Xem giấy chứng nhận tình yêu (tên, độ
+                                   thân mật, ID định danh)
+
+  eiuchiatay                    — Chia tay người yêu (cần xác nhận bằng nút)
+
+  QUY TẮC:
+  • Mỗi người chỉ có thể có 1 người yêu tại một thời điểm
+  • Không thể setlove với chính mình
+  • Chia tay có nút xác nhận, timeout 10 giây
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  7. TÍNH NĂNG THÔNG TIN & HỌC TẬP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mỗi lần dùng lệnh học tập, người dùng nhận thêm điểm "trình độ học vấn" lưu
+vào hồ sơ cá nhân.
+
+► TRA CỨU WIKIPEDIA
+  eiusearch <từ khóa>           — Tìm kiếm Wikipedia tiếng Việt, tự động
+                                   chuyển sang tiếng Anh nếu không có bài VI
+
+► THỜI TIẾT
+  eiuweather <tên thành phố>    — Xem thời tiết thực tế: nhiệt độ, cảm giác
+                                   như, độ ẩm, trạng thái (API OpenWeatherMap)
+  Ví dụ: eiuweather Hanoi
+
+► TOÁN HỌC
+  eiugiaipt <a> <b> <c>         — Giải phương trình bậc 2: ax² + bx + c = 0
+                                   Trả về nghiệm x1, x2 hoặc thông báo vô nghiệm
+  Ví dụ: eiugiaipt 1 -5 6
+
+  eiutongquat <nx> <ny> <x0> <y0>
+                                — Viết PT tổng quát đường thẳng qua điểm
+                                   (x0;y0) có vtpt (nx;ny)
+  Ví dụ: eiutongquat 4 -2 1 1
+
+  eiuthamso <vx> <vy> <x0> <y0>
+                                — Viết PT tham số đường thẳng qua điểm
+                                   (x0;y0) có vchp (vx;vy)
+  Ví dụ: eiuthamso 2 -1 1 2
+
+  eiumoment <lực (N)> <cánh tay đòn (m)>
+                                — Tính moment lực: M = F × d (N.m)
+  Ví dụ: eiumoment 10 2.5
+
+► HÓA HỌC
+  eiucanbang <PTHH>             — Cân bằng phương trình hóa học tự động
+                                   Cú pháp: dùng "->" thay cho mũi tên
+  Ví dụ: eiucanbang H2 + O2 -> H2O
+          eiucanbang Fe + O2 -> Fe2O3
+
+► HỌC BẠ
+  eiuhocba                      — Xem trình độ học vấn tích lũy của bản thân
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  8. NHẠC (VOICE CHANNEL)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bot hỗ trợ phát nhạc từ SoundCloud trực tiếp trong voice channel.
+
+  eiujoin                       — Bot vào voice channel bạn đang ở
+  eiuroidi                      — Bot rời khỏi voice channel
+  eiuplay <url SoundCloud>      — Phát nhạc từ link SoundCloud
+                                   (Bạn phải đang ở trong voice channel)
+
+  Lưu ý:
+  • Chỉ hỗ trợ link SoundCloud (không phải YouTube hay Spotify)
+  • Bot tự động kết nối lại nếu bị ngắt kết nối (tối đa 3 lần thử)
+  • Chất lượng âm thanh: 192kbps stereo
+
+  Ngoài ra bot còn có tính năng tự động phát nhạc nền theo lịch (task vòng lặp
+  được cấu hình sẵn trong code).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  9. QUẢN LÝ SERVER (CHỈ DÀNH CHO ADMIN / MOD)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  eiukick @member [lý do]       — Kick thành viên khỏi server
+                                   (Yêu cầu quyền: Kick Members)
+
+  eiuban @member [lý do]        — Ban vĩnh viễn thành viên
+                                   (Yêu cầu quyền: Ban Members)
+
+  eiurole @member <tên role>    — Gán role cho thành viên
+                                   (Yêu cầu quyền: Manage Roles)
+
+  eiumute @member <thời gian>   — Mute (timeout) thành viên trong một khoảng
+                                   thời gian nhất định
+
+  eiusetupchannel #kênh         — Thiết lập kênh nhận biểu đồ chứng khoán
+                                   (Yêu cầu quyền: Administrator)
+
+  Lưu ý bảo mật:
+  • Bot kiểm tra role hierarchy: không thể kick/ban người có role cao hơn bot
+  • Người dùng phải có đúng quyền mới dùng được lệnh admin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  10. TRA CỨU MẠNG XÃ HỘI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  eiufb <link Facebook>         — Lấy thông tin công khai từ trang Facebook:
+                                   tên, mô tả, loại trang, ảnh đại diện
+  Ví dụ: eiufb https://www.facebook.com/username
+
+  eiutik <username TikTok>      — Xem thông tin người dùng TikTok:
+                                   tên, số người theo dõi, đang theo dõi,
+                                   tổng lượt thích, bio
+  Ví dụ: eiutik hanhdun
+
+  Lưu ý: Chỉ lấy được thông tin công khai, không thể xem tài khoản private.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  11. LỆNH PHỤ KHÁC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  eiuhelp                       — Mở menu trợ giúp có dropdown chọn danh mục
+                                   (Kinh tế / Pháp luật / Giải trí / Thông tin)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  12. LƯU Ý & COOLDOWN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Một số lệnh có cooldown (thời gian chờ) để tránh spam:
+
+  ┌──────────────────────────┬──────────────────────┐
+  │ Lệnh                     │ Cooldown             │
+  ├──────────────────────────┼──────────────────────┤
+  │ eiudaily                 │ 24 giờ               │
+  │ eiudailylove             │ 1 giờ (mỗi cặp)      │
+  │ eiumine                  │ 10 giây              │
+  │ eiusell / eiunung        │ 10 giây              │
+  │ eiubuy / eiusellstock    │ 20 giây              │
+  │ eiukiss / eiuhug / slap  │ 10 giây              │
+  │ eiuweather / eiusearch   │ 10 giây              │
+  │ eiuhelp                  │ 10 giây              │
+  │ eiupack                  │ 10 giây              │
+  │ eiusetlove               │ 60 giây              │
+  └──────────────────────────┴──────────────────────┘
+
+  Nếu dùng lệnh quá sớm, bot sẽ thông báo số giây/giờ còn lại.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CÁC FILE DỮ LIỆU BOT SỬ DỤNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  data.json          — Dữ liệu tình yêu (cặp đôi, độ thân mật)
+  minecraft.json     — Dữ liệu kinh tế (Hcoin, khoáng sản, cổ phiếu)
+  trinhdohocvan.json — Dữ liệu học vấn (điểm tích lũy từ lệnh học tập)
+  inventory.json     — Túi đồ sự kiện Hội Trợ Hè
+  stock.json         — Lịch sử giá cổ phiếu HDPE
+  config.json        — Cấu hình kênh chứng khoán của từng server
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  THÔNG TIN KỸ THUẬT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Ngôn ngữ:     Python 3.x
+  Thư viện:     discord.py, requests, wikipedia, sympy, mplfinance,
+                matplotlib, yt-dlp, aiohttp, BeautifulSoup, pandas,
+                TikTokApi, nacl (voice support)
+  API bên ngoài:
+    • OpenWeatherMap  — Dữ liệu thời tiết (key cấu hình trong code)
+    • TikWM API       — Thông tin người dùng TikTok (không cần key)
+    • Facebook OG     — Thông tin công khai Facebook (scraping HTML)
+  Lưu trữ:     File JSON cục bộ (không dùng database)
+  Tự động:     Biểu đồ chứng khoán cập nhật mỗi 3 phút (discord Tasks loop)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TÁC GIẢ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Bot được phát triển bởi HanhDun
+  YouTube: https://www.youtube.com/@hanhdun
+  TikTok:  @hanhdun
+
+  Dành riêng cho cộng đồng học sinh Việt Nam 🇻🇳
+
+══════════════════════════════════════════════════════════════════════════════

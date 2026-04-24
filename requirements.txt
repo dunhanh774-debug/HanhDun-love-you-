@@ -1,0 +1,8 @@
+discord.py
+wikipedia
+requests
+sympy
+PyNaCl
+mplfinance
+matplotlib
+pandas
